@@ -10,8 +10,11 @@
 // +----------------------------------------------------------------------
 use think\facade\Route;
 
-Route::get('think', function () {
-    return 'hello,ThinkPHP6!';
+Route::get('', function () {
+    return 'hello world!';
 });
 
-Route::get('hello/:name', 'index/hello');
+Route::get('counter', 'index/get');
+Route::post('counter/increase', 'index/increase');
+Route::post('counter/decrease', 'index/decrease');
+
