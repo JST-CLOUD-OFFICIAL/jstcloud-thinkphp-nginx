@@ -3,3 +3,7 @@
 /vendor
 *.log
 .env
+
+
+# test and output file
+*demo.zip
