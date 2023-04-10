@@ -11,6 +11,18 @@ class Index
      /**
      * 获取Counter值的接口
      */
+    public function helloWorld()
+    {
+        $counter = [
+            'message' => 'Welcome to Jst AppEngine, Hello World!', 
+            "code" => 400
+        ];
+        return json($counter);
+    }
+
+     /**
+     * 获取Counter值的接口
+     */
     public function get()
     {
         $id = 1; // Counter表中只有一条数据，所以固定为1
