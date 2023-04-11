@@ -24,7 +24,7 @@ return [
             // 数据库类型
             'type'            => env('database.type', 'mysql'),
             // 服务器地址
-            'hostname'        => getenv('db_addr'),
+            'hostname'        => explode(":", getenv('db_addr'))[0],
             // 数据库名
             'database'        => getenv('db_name'),
             // 用户名
@@ -32,7 +32,7 @@ return [
             // 密码
             'password'        => getenv('db_pass'),
             // 端口
-            'hostport'        => 3306,
+            'hostport'        => explode(":", getenv('db_addr'))[1],
             // 数据库连接参数
             'params'          => [],
             // 数据库编码默认采用utf8

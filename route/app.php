@@ -10,12 +10,9 @@
 // +----------------------------------------------------------------------
 use think\facade\Route;
 
-Route::get('', function () {
-    return 'hello world!';
-});
 
-Route::get('', 'index/helloWorld');
-Route::get('counter', 'index/get');
-Route::post('counter/increase', 'index/increase');
-Route::post('counter/decrease', 'index/decrease');
+Route::get('/', 'index/helloWorld');
+Route::get('/counter', 'index/get');
+Route::post('/counter/increase', 'index/increase');
+Route::post('/counter/decrease', 'index/decrease');
 
