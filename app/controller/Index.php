@@ -15,7 +15,7 @@ class Index
     {
         $counter = [
             'message' => 'Welcome to Jst AppEngine, Hello World!', 
-            "code" => 400
+            "code" => 200
         ];
         return json($counter);
     }
